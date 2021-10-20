@@ -48,6 +48,7 @@ namespace ProjetoWebRepair
             this.btnExit.Text = "Encerrar sessão";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnCliente
             // 
@@ -62,6 +63,7 @@ namespace ProjetoWebRepair
             this.btnCliente.Text = "Cadastro de clientes";
             this.btnCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCliente.UseVisualStyleBackColor = false;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // btnPecas
             // 
@@ -76,6 +78,7 @@ namespace ProjetoWebRepair
             this.btnPecas.Text = "Cadastro de peças";
             this.btnPecas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPecas.UseVisualStyleBackColor = false;
+            this.btnPecas.Click += new System.EventHandler(this.btnPecas_Click);
             // 
             // btnCadastro
             // 
@@ -92,6 +95,7 @@ namespace ProjetoWebRepair
             this.btnCadastro.Text = "Cadastro de serviço";
             this.btnCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCadastro.UseVisualStyleBackColor = false;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // Form2
             // 

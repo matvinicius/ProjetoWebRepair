@@ -29,7 +29,6 @@ namespace ProjetoWebRepair
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -48,26 +47,18 @@ namespace ProjetoWebRepair
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtProdutos = new System.Windows.Forms.TextBox();
+            this.txtServicos = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.btnTotal = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCadastro = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProjetoWebRepair.Properties.Resources._389493;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 66);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -253,38 +244,39 @@ namespace ProjetoWebRepair
             this.label10.TabIndex = 18;
             this.label10.Text = "Forma de pagamento";
             // 
-            // textBox6
+            // txtProdutos
             // 
-            this.textBox6.Location = new System.Drawing.Point(369, 357);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(144, 20);
-            this.textBox6.TabIndex = 19;
+            this.txtProdutos.Location = new System.Drawing.Point(369, 357);
+            this.txtProdutos.Name = "txtProdutos";
+            this.txtProdutos.Size = new System.Drawing.Size(144, 20);
+            this.txtProdutos.TabIndex = 19;
             // 
-            // textBox7
+            // txtServicos
             // 
-            this.textBox7.Location = new System.Drawing.Point(369, 383);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(144, 20);
-            this.textBox7.TabIndex = 20;
+            this.txtServicos.Location = new System.Drawing.Point(369, 383);
+            this.txtServicos.Name = "txtServicos";
+            this.txtServicos.Size = new System.Drawing.Size(144, 20);
+            this.txtServicos.TabIndex = 20;
             // 
-            // textBox8
+            // txtTotal
             // 
-            this.textBox8.Location = new System.Drawing.Point(369, 421);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(144, 20);
-            this.textBox8.TabIndex = 21;
+            this.txtTotal.Location = new System.Drawing.Point(369, 421);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(144, 20);
+            this.txtTotal.TabIndex = 21;
             // 
-            // button1
+            // btnTotal
             // 
-            this.button1.BackColor = System.Drawing.Color.Gold;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(369, 461);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 45);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "CALCULAR TOTAL";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnTotal.BackColor = System.Drawing.Color.Gold;
+            this.btnTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTotal.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnTotal.Location = new System.Drawing.Point(369, 461);
+            this.btnTotal.Name = "btnTotal";
+            this.btnTotal.Size = new System.Drawing.Size(144, 45);
+            this.btnTotal.TabIndex = 22;
+            this.btnTotal.Text = "CALCULAR TOTAL";
+            this.btnTotal.UseVisualStyleBackColor = false;
+            this.btnTotal.Click += new System.EventHandler(this.btnTotal_Click);
             // 
             // label11
             // 
@@ -319,17 +311,41 @@ namespace ProjetoWebRepair
             this.label13.TabIndex = 25;
             this.label13.Text = "Total";
             // 
-            // button2
+            // btnCadastro
             // 
-            this.button2.BackColor = System.Drawing.Color.Gold;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(41, 461);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(144, 45);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "CADASTRAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCadastro.BackColor = System.Drawing.Color.Gold;
+            this.btnCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastro.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnCadastro.Location = new System.Drawing.Point(37, 461);
+            this.btnCadastro.Name = "btnCadastro";
+            this.btnCadastro.Size = new System.Drawing.Size(144, 45);
+            this.btnCadastro.TabIndex = 26;
+            this.btnCadastro.Text = "CADASTRAR";
+            this.btnCadastro.UseVisualStyleBackColor = false;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProjetoWebRepair.Properties.Resources._389493;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.Gold;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnVoltar.Location = new System.Drawing.Point(204, 461);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(144, 45);
+            this.btnVoltar.TabIndex = 27;
+            this.btnVoltar.Text = "VOLTAR";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // Form3
             // 
@@ -337,14 +353,15 @@ namespace ProjetoWebRepair
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(564, 542);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.btnTotal);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.txtServicos);
+            this.Controls.Add(this.txtProdutos);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label9);
@@ -394,13 +411,14 @@ namespace ProjetoWebRepair
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtProdutos;
+        private System.Windows.Forms.TextBox txtServicos;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Button btnTotal;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCadastro;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }
