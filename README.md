@@ -1,11 +1,11 @@
 # WebRepair
 
 <div align="left">
-  <img src="https://user-images.githubusercontent.com/69610422/138192286-a0329fe8-c3e8-4699-8a96-691712f67c15.JPG" width="300px" />
-  <img src="https://user-images.githubusercontent.com/69610422/138192361-c76cfa37-7258-4326-a990-ca5fbb017c81.JPG" width="300px" />
-  <img src="https://user-images.githubusercontent.com/69610422/138192525-1657bc6f-f692-4f11-9780-a505fcccdbdd.JPG" width="300px" />
-  <img src="https://user-images.githubusercontent.com/69610422/138192713-ff9f5aa5-6bed-462d-9d18-d778093382b7.JPG" width="300px" />
-  <img src="https://user-images.githubusercontent.com/69610422/138193046-2ff24e8b-c91a-4704-a410-9f32dbc94d43.JPG" width="300px" />
+  <img src="https://user-images.githubusercontent.com/69610422/138192286-a0329fe8-c3e8-4699-8a96-691712f67c15.JPG" width="350px" />
+  <img src="https://user-images.githubusercontent.com/69610422/138192361-c76cfa37-7258-4326-a990-ca5fbb017c81.JPG" width="350px" />
+  <img src="https://user-images.githubusercontent.com/69610422/138192525-1657bc6f-f692-4f11-9780-a505fcccdbdd.JPG" width="350px" />
+  <img src="https://user-images.githubusercontent.com/69610422/138192713-ff9f5aa5-6bed-462d-9d18-d778093382b7.JPG" width="350px" />
+  <img src="https://user-images.githubusercontent.com/69610422/138193046-2ff24e8b-c91a-4704-a410-9f32dbc94d43.JPG" width="350px" />
 </div>  
   
 # Projeto pré-aula (WebRepair)
