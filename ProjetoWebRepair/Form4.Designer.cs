@@ -29,118 +29,124 @@ namespace ProjetoWebRepair
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            this.btnDeletar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Pesquisanome = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_nome = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.msk_tel = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.msk_cel = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_endereco = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_num = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_bairro = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.msk_rg = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.msk_cpf = new System.Windows.Forms.MaskedTextBox();
             this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button5
+            // btnDeletar
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button5.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.trash_icon;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button5.Location = new System.Drawing.Point(463, 87);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 125);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Deletar";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnDeletar.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnDeletar.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.trash_icon;
+            this.btnDeletar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnDeletar.Location = new System.Drawing.Point(463, 87);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(100, 125);
+            this.btnDeletar.TabIndex = 4;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
-            // button4
+            // btnEditar
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button4.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.edit_file_icon;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button4.Location = new System.Drawing.Point(357, 87);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 125);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Editar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnEditar.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnEditar.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.edit_file_icon;
+            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnEditar.Location = new System.Drawing.Point(357, 87);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(100, 125);
+            this.btnEditar.TabIndex = 3;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // button3
+            // btnBuscar
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button3.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.folder_search_icon;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button3.Location = new System.Drawing.Point(240, 87);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 125);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Buscar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnBuscar.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.folder_search_icon;
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBuscar.Location = new System.Drawing.Point(240, 87);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(100, 125);
+            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // button2
+            // btnSalvar
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button2.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.Save_icon;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.Location = new System.Drawing.Point(125, 87);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 125);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Salvar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSalvar.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnSalvar.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.Save_icon;
+            this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalvar.Location = new System.Drawing.Point(125, 87);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(100, 125);
+            this.btnSalvar.TabIndex = 1;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button1.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.Folder_Add_icon;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(3, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 125);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Adicionar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAdd.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnAdd.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.Folder_Add_icon;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnAdd.Location = new System.Drawing.Point(3, 87);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 125);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Adicionar";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // pictureBox1
             // 
@@ -185,12 +191,12 @@ namespace ProjetoWebRepair
             this.label3.TabIndex = 8;
             this.label3.Text = "Pesquisar nome";
             // 
-            // textBox1
+            // txt_Pesquisanome
             // 
-            this.textBox1.Location = new System.Drawing.Point(114, 243);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(423, 20);
-            this.textBox1.TabIndex = 9;
+            this.txt_Pesquisanome.Location = new System.Drawing.Point(114, 243);
+            this.txt_Pesquisanome.Name = "txt_Pesquisanome";
+            this.txt_Pesquisanome.Size = new System.Drawing.Size(423, 20);
+            this.txt_Pesquisanome.TabIndex = 9;
             // 
             // label4
             // 
@@ -203,12 +209,12 @@ namespace ProjetoWebRepair
             this.label4.TabIndex = 10;
             this.label4.Text = "Nome";
             // 
-            // textBox2
+            // txt_nome
             // 
-            this.textBox2.Location = new System.Drawing.Point(114, 274);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(423, 20);
-            this.textBox2.TabIndex = 11;
+            this.txt_nome.Location = new System.Drawing.Point(114, 274);
+            this.txt_nome.Name = "txt_nome";
+            this.txt_nome.Size = new System.Drawing.Size(423, 20);
+            this.txt_nome.TabIndex = 11;
             // 
             // label5
             // 
@@ -221,20 +227,20 @@ namespace ProjetoWebRepair
             this.label5.TabIndex = 12;
             this.label5.Text = "Telefone";
             // 
-            // textBox3
+            // txt_email
             // 
-            this.textBox3.Location = new System.Drawing.Point(114, 342);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(281, 20);
-            this.textBox3.TabIndex = 13;
+            this.txt_email.Location = new System.Drawing.Point(114, 342);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(281, 20);
+            this.txt_email.TabIndex = 13;
             // 
-            // maskedTextBox1
+            // msk_tel
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(114, 306);
-            this.maskedTextBox1.Mask = "(  )____-____";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(95, 20);
-            this.maskedTextBox1.TabIndex = 14;
+            this.msk_tel.Location = new System.Drawing.Point(114, 306);
+            this.msk_tel.Mask = "(99) 0000-0000";
+            this.msk_tel.Name = "msk_tel";
+            this.msk_tel.Size = new System.Drawing.Size(95, 20);
+            this.msk_tel.TabIndex = 14;
             // 
             // label6
             // 
@@ -247,13 +253,13 @@ namespace ProjetoWebRepair
             this.label6.TabIndex = 15;
             this.label6.Text = "Celular";
             // 
-            // maskedTextBox2
+            // msk_cel
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(302, 306);
-            this.maskedTextBox2.Mask = "(  )_____-____";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(93, 20);
-            this.maskedTextBox2.TabIndex = 16;
+            this.msk_cel.Location = new System.Drawing.Point(302, 306);
+            this.msk_cel.Mask = "(99) 00000-0000";
+            this.msk_cel.Name = "msk_cel";
+            this.msk_cel.Size = new System.Drawing.Size(93, 20);
+            this.msk_cel.TabIndex = 16;
             // 
             // label7
             // 
@@ -266,12 +272,12 @@ namespace ProjetoWebRepair
             this.label7.TabIndex = 17;
             this.label7.Text = "E-mail";
             // 
-            // textBox4
+            // txt_endereco
             // 
-            this.textBox4.Location = new System.Drawing.Point(114, 377);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(423, 20);
-            this.textBox4.TabIndex = 18;
+            this.txt_endereco.Location = new System.Drawing.Point(114, 377);
+            this.txt_endereco.Name = "txt_endereco";
+            this.txt_endereco.Size = new System.Drawing.Size(423, 20);
+            this.txt_endereco.TabIndex = 18;
             // 
             // label8
             // 
@@ -285,12 +291,12 @@ namespace ProjetoWebRepair
             this.label8.Text = "Endereço";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // textBox5
+            // txt_num
             // 
-            this.textBox5.Location = new System.Drawing.Point(114, 415);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(111, 20);
-            this.textBox5.TabIndex = 20;
+            this.txt_num.Location = new System.Drawing.Point(114, 415);
+            this.txt_num.Name = "txt_num";
+            this.txt_num.Size = new System.Drawing.Size(111, 20);
+            this.txt_num.TabIndex = 20;
             // 
             // label9
             // 
@@ -314,12 +320,12 @@ namespace ProjetoWebRepair
             this.label10.TabIndex = 22;
             this.label10.Text = "Bairro";
             // 
-            // textBox6
+            // txt_bairro
             // 
-            this.textBox6.Location = new System.Drawing.Point(296, 415);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(241, 20);
-            this.textBox6.TabIndex = 23;
+            this.txt_bairro.Location = new System.Drawing.Point(296, 415);
+            this.txt_bairro.Name = "txt_bairro";
+            this.txt_bairro.Size = new System.Drawing.Size(241, 20);
+            this.txt_bairro.TabIndex = 23;
             // 
             // label11
             // 
@@ -332,13 +338,13 @@ namespace ProjetoWebRepair
             this.label11.TabIndex = 24;
             this.label11.Text = "RG";
             // 
-            // maskedTextBox3
+            // msk_rg
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(114, 457);
-            this.maskedTextBox3.Mask = "__.___.___-_";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(111, 20);
-            this.maskedTextBox3.TabIndex = 25;
+            this.msk_rg.Location = new System.Drawing.Point(114, 457);
+            this.msk_rg.Mask = "00.000.000-0";
+            this.msk_rg.Name = "msk_rg";
+            this.msk_rg.Size = new System.Drawing.Size(111, 20);
+            this.msk_rg.TabIndex = 25;
             // 
             // label12
             // 
@@ -351,13 +357,13 @@ namespace ProjetoWebRepair
             this.label12.TabIndex = 27;
             this.label12.Text = "CPF";
             // 
-            // maskedTextBox4
+            // msk_cpf
             // 
-            this.maskedTextBox4.Location = new System.Drawing.Point(296, 457);
-            this.maskedTextBox4.Mask = "___.___.___-__";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox4.TabIndex = 28;
+            this.msk_cpf.Location = new System.Drawing.Point(296, 457);
+            this.msk_cpf.Mask = "000.000.000-00";
+            this.msk_cpf.Name = "msk_cpf";
+            this.msk_cpf.Size = new System.Drawing.Size(100, 20);
+            this.msk_cpf.TabIndex = 28;
             // 
             // button6
             // 
@@ -371,6 +377,7 @@ namespace ProjetoWebRepair
             this.button6.TabIndex = 29;
             this.button6.Text = "VOLTAR";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form4
             // 
@@ -379,36 +386,37 @@ namespace ProjetoWebRepair
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(564, 542);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.maskedTextBox4);
+            this.Controls.Add(this.msk_cpf);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.maskedTextBox3);
+            this.Controls.Add(this.msk_rg);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txt_bairro);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txt_num);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt_endereco);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.msk_cel);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.msk_tel);
+            this.Controls.Add(this.txt_email);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_Pesquisanome);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDeletar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnAdd);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Cadastro de cliente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -417,34 +425,34 @@ namespace ProjetoWebRepair
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Pesquisanome;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_nome;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.MaskedTextBox msk_tel;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox msk_cel;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_endereco;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_num;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_bairro;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox msk_rg;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.MaskedTextBox msk_cpf;
         private System.Windows.Forms.Button button6;
     }
 }

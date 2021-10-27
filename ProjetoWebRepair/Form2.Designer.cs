@@ -29,6 +29,7 @@ namespace ProjetoWebRepair
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.btnExit = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
             this.btnPecas = new System.Windows.Forms.Button();
@@ -107,8 +108,8 @@ namespace ProjetoWebRepair
             this.Controls.Add(this.btnCliente);
             this.Controls.Add(this.btnPecas);
             this.Controls.Add(this.btnCadastro);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
-            this.Text = "Form2";
             this.ResumeLayout(false);
 
         }

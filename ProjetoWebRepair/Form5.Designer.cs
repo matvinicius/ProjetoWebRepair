@@ -29,29 +29,30 @@ namespace ProjetoWebRepair
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnApgar = new System.Windows.Forms.Button();
+            this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCodPeca = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtQtd = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtEstoque = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtAplicacao = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,93 +88,98 @@ namespace ProjetoWebRepair
             this.label2.TabIndex = 8;
             this.label2.Text = "Repair";
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button1.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.Folder_Add_icon;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(1, 90);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 125);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Adicionar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAdd.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnAdd.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.Folder_Add_icon;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnAdd.Location = new System.Drawing.Point(1, 90);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 125);
+            this.btnAdd.TabIndex = 9;
+            this.btnAdd.Text = "Adicionar";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnSalvar
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button2.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.Save_icon;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.Location = new System.Drawing.Point(118, 90);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 125);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Salvar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSalvar.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnSalvar.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.Save_icon;
+            this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalvar.Location = new System.Drawing.Point(118, 90);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(100, 125);
+            this.btnSalvar.TabIndex = 10;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // button3
+            // btnBuscar
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button3.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.folder_search_icon;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button3.Location = new System.Drawing.Point(233, 90);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 125);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Buscar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnBuscar.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.folder_search_icon;
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBuscar.Location = new System.Drawing.Point(233, 90);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(100, 125);
+            this.btnBuscar.TabIndex = 11;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // button4
+            // btnEditar
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button4.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.edit_file_icon;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button4.Location = new System.Drawing.Point(348, 90);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 125);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Editar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnEditar.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnEditar.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.edit_file_icon;
+            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnEditar.Location = new System.Drawing.Point(348, 90);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(100, 125);
+            this.btnEditar.TabIndex = 12;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // button5
+            // btnApgar
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button5.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.trash_icon;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button5.Location = new System.Drawing.Point(463, 90);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 125);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Deletar";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnApgar.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnApgar.BackgroundImage = global::ProjetoWebRepair.Properties.Resources.trash_icon;
+            this.btnApgar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnApgar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnApgar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApgar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnApgar.Location = new System.Drawing.Point(463, 90);
+            this.btnApgar.Name = "btnApgar";
+            this.btnApgar.Size = new System.Drawing.Size(100, 125);
+            this.btnApgar.TabIndex = 13;
+            this.btnApgar.Text = "Deletar";
+            this.btnApgar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnApgar.UseVisualStyleBackColor = false;
+            this.btnApgar.Click += new System.EventHandler(this.btnApgar_Click);
             // 
-            // textBox1
+            // txtPesquisar
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 250);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(423, 20);
-            this.textBox1.TabIndex = 14;
+            this.txtPesquisar.Location = new System.Drawing.Point(118, 250);
+            this.txtPesquisar.Name = "txtPesquisar";
+            this.txtPesquisar.Size = new System.Drawing.Size(423, 20);
+            this.txtPesquisar.TabIndex = 14;
             // 
             // label3
             // 
@@ -186,12 +192,12 @@ namespace ProjetoWebRepair
             this.label3.TabIndex = 15;
             this.label3.Text = "Pesquisar código";
             // 
-            // textBox2
+            // txtCodPeca
             // 
-            this.textBox2.Location = new System.Drawing.Point(118, 285);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(423, 20);
-            this.textBox2.TabIndex = 16;
+            this.txtCodPeca.Location = new System.Drawing.Point(118, 285);
+            this.txtCodPeca.Name = "txtCodPeca";
+            this.txtCodPeca.Size = new System.Drawing.Size(423, 20);
+            this.txtCodPeca.TabIndex = 16;
             // 
             // label4
             // 
@@ -204,12 +210,12 @@ namespace ProjetoWebRepair
             this.label4.TabIndex = 17;
             this.label4.Text = "Código peça";
             // 
-            // textBox3
+            // txtDescricao
             // 
-            this.textBox3.Location = new System.Drawing.Point(118, 321);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(423, 20);
-            this.textBox3.TabIndex = 18;
+            this.txtDescricao.Location = new System.Drawing.Point(118, 321);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(423, 20);
+            this.txtDescricao.TabIndex = 18;
             // 
             // label5
             // 
@@ -222,12 +228,12 @@ namespace ProjetoWebRepair
             this.label5.TabIndex = 19;
             this.label5.Text = "Descrição";
             // 
-            // textBox4
+            // txtQtd
             // 
-            this.textBox4.Location = new System.Drawing.Point(118, 359);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 20;
+            this.txtQtd.Location = new System.Drawing.Point(118, 359);
+            this.txtQtd.Name = "txtQtd";
+            this.txtQtd.Size = new System.Drawing.Size(100, 20);
+            this.txtQtd.TabIndex = 20;
             // 
             // label6
             // 
@@ -240,12 +246,12 @@ namespace ProjetoWebRepair
             this.label6.TabIndex = 21;
             this.label6.Text = "Quantidade";
             // 
-            // textBox5
+            // txtEstoque
             // 
-            this.textBox5.Location = new System.Drawing.Point(338, 359);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 22;
+            this.txtEstoque.Location = new System.Drawing.Point(338, 359);
+            this.txtEstoque.Name = "txtEstoque";
+            this.txtEstoque.Size = new System.Drawing.Size(100, 20);
+            this.txtEstoque.TabIndex = 22;
             // 
             // label7
             // 
@@ -258,12 +264,12 @@ namespace ProjetoWebRepair
             this.label7.TabIndex = 23;
             this.label7.Text = "Estoque atual";
             // 
-            // textBox6
+            // txtValor
             // 
-            this.textBox6.Location = new System.Drawing.Point(118, 397);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 24;
+            this.txtValor.Location = new System.Drawing.Point(118, 397);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.TabIndex = 24;
             // 
             // label8
             // 
@@ -276,12 +282,12 @@ namespace ProjetoWebRepair
             this.label8.TabIndex = 25;
             this.label8.Text = "Valor unitário";
             // 
-            // textBox7
+            // txtAplicacao
             // 
-            this.textBox7.Location = new System.Drawing.Point(118, 432);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(423, 20);
-            this.textBox7.TabIndex = 26;
+            this.txtAplicacao.Location = new System.Drawing.Point(118, 432);
+            this.txtAplicacao.Name = "txtAplicacao";
+            this.txtAplicacao.Size = new System.Drawing.Size(423, 20);
+            this.txtAplicacao.TabIndex = 26;
             // 
             // label9
             // 
@@ -294,18 +300,19 @@ namespace ProjetoWebRepair
             this.label9.TabIndex = 27;
             this.label9.Text = "Aplicação";
             // 
-            // button6
+            // btnVoltar
             // 
-            this.button6.BackColor = System.Drawing.Color.Gold;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button6.Location = new System.Drawing.Point(223, 507);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(125, 23);
-            this.button6.TabIndex = 30;
-            this.button6.Text = "VOLTAR";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnVoltar.BackColor = System.Drawing.Color.Gold;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnVoltar.Location = new System.Drawing.Point(223, 507);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(125, 23);
+            this.btnVoltar.TabIndex = 30;
+            this.btnVoltar.Text = "VOLTAR";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // Form5
             // 
@@ -313,31 +320,32 @@ namespace ProjetoWebRepair
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(564, 542);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtAplicacao);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtEstoque);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtQtd);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCodPeca);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtPesquisar);
+            this.Controls.Add(this.btnApgar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.Text = "Cadastro de peças";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -349,25 +357,25 @@ namespace ProjetoWebRepair
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnApgar;
+        private System.Windows.Forms.TextBox txtPesquisar;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCodPeca;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtQtd;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtEstoque;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtAplicacao;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }
